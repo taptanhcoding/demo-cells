@@ -1,0 +1,171 @@
+/* stylelint-disable property-no-vendor-prefix, length-zero-no-unit */
+
+@import './fonts';
+// @import 'leaflet/dist/leaflet.css';
+@import './variable';
+
+@import './slick/slick';
+
+
+@import './nioicon/nioicon.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #707c8c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: transparent;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d5d5d5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #464e5f;
+}
+
+::-webkit-scrollbar-track-piece {
+  border-radius: 0.375rem;
+  border: 1px solid #dddde3;
+}
+
+.ant-message-notice-content {
+  padding: 0 !important;
+  box-shadow: 0 1.2px 3.6px rgb(0 0 0 / 11%), 0 6.4px 14.4px rgb(0 0 0 / 13%) !important;
+
+  .ant-message-success {
+    padding: 9px 12px;
+    background: #eaf6ed;
+    border-radius: 4px;
+  }
+
+  .ant-message-info {
+    padding: 9px 12px;
+    background: #e7f0f9;
+    border-radius: 4px;
+  }
+
+  .ant-message-warning,
+  .ant-message-error {
+    padding: 9px 12px;
+    background: #faecea;
+    border-radius: 4px;
+  }
+}
+
+.ant-message.ant-message-top {
+  top: 3.5rem !important;
+
+  .ant-message-notice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 20px;
+  }
+}
+
+@media print {
+  body.print-single-qr-code-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+    .print-content {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.leaflet-marker-icon.leaflet-div-icon.leaflet-zoom-animated {
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0px !important;
+  width: 0px !important;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.drop-item {
+  min-width: 120px;
+}
+
+
+.badge-dot {
+  position: relative;
+  line-height: 1.125rem;
+  letter-spacing: 0.01em;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  display: block;
+  &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+      height: 6px;
+      width: 6px;
+      margin-top: -1px;
+      border-radius: 50%;
+      background: currentColor;
+    
+  }
+  &.bg-danger {
+      color: #e85347;
+  }
+
+  &.bg-success{
+      color: #1ee0ac;
+  }
+}
+
+@import './layout/layout'

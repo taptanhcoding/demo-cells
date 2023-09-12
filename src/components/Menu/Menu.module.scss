@@ -1,0 +1,26 @@
+.menu-filter {
+    display: none;
+    width: calc(100% - 230px);
+    left: 250px;
+    top: 0;
+    bottom:0;
+    animation: delayhide 0.05s ease-in-out;
+    z-index: 50;
+}
+
+.item-menu {
+    &:hover  .menu-filter {
+        display: grid;
+    }
+}
+
+
+
+@keyframes delayhide {
+    0% {
+        top: 20px;
+    }
+    100% {
+        top: 0;
+    }
+}

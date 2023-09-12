@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+     "api": ["src/api"],
+      "api/*": ["src/api/*"],
+      "assets": ["src/assets"],
+      "assets/*": ["src/assets/*"],
+      "components": ["src/components"],
+      "components/*": ["src/components/*"],
+      "constantsColor": ["src/constants"],
+      "constants/*": ["src/constants/*"],
+      "hooks": ["src/hooks"],
+      "hooks/*": ["src/hooks/*"],
+      "icons": ["src/icons"],
+      "icons/*": ["src/icons/*"],
+      "interfaces": ["src/interfaces"],
+      "interfaces/*": ["src/interfaces/*"],
+      "layouts": ["src/layouts"],
+      "layouts/*": ["src/layouts/*"],
+      "modules": ["src/modules"],
+      "modules/*": ["src/modules/*"],
+      "pages": ["src/pages"],
+      "pages/*": ["src/pages/*"],
+      "routes": ["src/routes"],
+      "routes/*": ["src/routes/*"],
+      "services": ["src/services"],
+      "services/*": ["src/services/*"],
+      "utils": ["src/utils"],
+      "utils/*": ["src/utils/*"],
+      "styles/*": ["src/styles/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
